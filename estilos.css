@@ -1,0 +1,52 @@
+#fotoindex{
+    width: 400px;
+    height: 400px;
+
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background-color: #E4DDD8;
+    color: #A08888;
+}
+
+.rectangulo{
+    text-align: center;
+    list-style-type: none;
+    background-color: #CFB4B2;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tituloLetra{
+    font-size: 86px;
+}
+
+.opcionesLetra{
+    color:#946761;
+    font-size: 35px;
+}
+
+.rectangulo-datosPersonales{
+    width: 20%;
+}
+
+.rectangulo-Oscuro{
+    background-color:#F3EAEA; 
+}
+
+.contenedor-centrado{
+    text-align: center;
+    color:#946761;
+    font-size: 50px;
+}
+
+.letras{
+    color:#946761;
+    font-size: 35px;
+    list-style-type: none;
+}

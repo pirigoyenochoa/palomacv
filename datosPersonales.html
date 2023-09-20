@@ -5,32 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi CV</title>
     <link rel="stylesheet" href="estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 </head>
 <body>
     <div>
-        <h1 class="tituloLetra"> PALOMA IRIGOYEN OCHOA - DATOS PERSONALES</h1>
+        <center><h1 class="tituloNombre">PALOMA IRIGOYEN OCHOA</h1></center>
+    </div>
+    <div class="botonesi">
         <ul>
-            <li class="rectangulo opcionesLetra rectangulo-datosPersonales"><a href="index.html">Inicio</li></a>
+            <a class="rectanguloboton2 opcionesLetra rectangulo-datosPersonales" href="index.html">INICIO</a>
+            <a class="rectanguloboton1 opcionesLetraboton rectangulo-datosPersonales">DATOS PERSONALES</a>
+            <a class="rectanguloboton2 opcionesLetra rectangulo-datosPersonales" href="educacion.html">ESTUDIOS</a>
+            <a class="rectanguloboton2 opcionesLetra rectangulo-datosPersonales" href="experiencia.html">EXPERIENCIA LABORAL</a>
+            <a class="rectanguloboton2 opcionesLetra rectangulo-datosPersonales" href="informacionAdicional.html">INFORMACIONES ADICIONALES</a>
         </ul>
     </div>
-    
+    <br/> 
+    <br/> 
+    <br/> 
     <div class="contenedor">
-        <img src ="./imagenes/perfilcv.jpeg" alt ="foto" id="fotoindex">
-        <p class="parrafo opcionesLetra rectangulo">
-            Busco capacitarme y obtener experiencia laboral en las áreas administrativas contables de grandes empresas, desarrollando mis potencialidades y conocimientos, aportando inteligencia, creatividad y responsabilidad. 
-            Tengo facilidad para realizar varias tareas simultáneamente. Capacidad de aprendizaje y habilidad para relacionarme interpersonalmente.
-        </p>
-
-        
+        <div class="fotocv1">
+            <img class="fotocv1" src ="./imagenes/perfilcv.jpeg" alt ="foto" id="fotoindex">
+        </div>
+        <div>
+            <p class="parrafo opcionesLetra rectangulo">
+                Busco capacitarme y obtener experiencia laboral en las áreas administrativas contables de grandes empresas, desarrollando mis potencialidades y conocimientos, aportando inteligencia, creatividad y responsabilidad. 
+                Tengo facilidad para realizar varias tareas simultáneamente. Capacidad de aprendizaje y habilidad para relacionarme interpersonalmente.
+            </p>
+            <p class="parrafo2 opcionesLetra2 rectangulo-infomas">
+                Fecha de nacimiento: 30/08/2001<br/> 
+                CUIL: 27-43447696-3<br/> 
+                Dirección: Cangallo 5051, Pablo Nogues, Buenos Aires, Argentina.<br/> 
+                Tel: +54 9 11 2159-7844<br/> 
+                E-mail: paloma.irigoyen8a@gmail.com
+            </p>
+        </div>
 
     </div>
 
-    <p class="parrafo opcionesLetra rectangulo-Oscuro">
-        Fecha de nacimiento: 30/08/2001
-        CUIL: 27-43447696-3
-        Cangallo 5051 – Pablo Nogues - Buenos Aires - Argentina 
-        Tel: +54 9 11 2159-7844
-        E-mail: paloma.irigoyen8a@gmail.com
-    </p>
+
+<style>
+        .botonesi {display: flex;
+            justify-content: space-around;}
+            
+</style>
+
 </body>
 </html>

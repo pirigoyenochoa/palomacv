@@ -1,23 +1,68 @@
-.fotocv{
-    width: 37.037vh;
-    height: auto;
-
+@media (max-width: 700px){
+    .contenedor {
+        display: block;
+        min-height: 100%;
+    }
+    .indexFoto{
+        width: 100%;
+    }
+    .datosFoto{
+        width: 100%;
+    }
+    .listaBotones{
+        text-align: center;
+        padding: 0px;
+    }
+    .listaBotones li{
+        margin-bottom: 30px;
+    }
 }
 
-.fotocv1{
-    width: 46.2963vh;
+@media (min-width:701px){
+    .contenedor {
+        display: -webkit-box;
+    }
+
+    .indexFoto{
+        width: 40%;
+    }
+
+    .datosFoto{
+        width: 25%;
+    }
+    .contenidoFoto{
+        width: 75%;
+    }
+
+    .listaBotones li{
+        display:inline-block;
+        padding-left:3px;
+        padding-right:3px;
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+}
+
+.contenedor {
+    align-items: center;
+    margin: 20px;
+}
+
+.divFoto{
+    align-items: center;
+    text-align: center;
+}
+.fotocv{
+    width: 37.037vh;
     height: auto;
     border-radius: 2.963vh;
 }
 
-.contenedor {
-    display: flex;
-    align-items: center;
-}
 
 body{
     background-color: #FFFFFF;
     color: #A08888;
+    margin:0px;
 }
 
 .rectangulo{
@@ -58,9 +103,10 @@ body{
 }
 .tituloNombre{
     font-family: 'Bebas Neue';
-    font-size: 8.8889vh; 
+    font-size: 6vh; 
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .opcionesLetra{
@@ -123,8 +169,16 @@ body{
     text-align:justify;
 
 }
+ul {
+    list-style: none;
+}
 
 
 .fotocv{
     border-radius: 1.3889vh;
+}
+
+.indexUl{
+    padding:0;
+    margin:0;
 }

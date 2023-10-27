@@ -46,6 +46,7 @@
 .contenedor {
     align-items: center;
     margin: 20px;
+    
 }
 
 .divFoto{
@@ -53,8 +54,8 @@
     text-align: center;
 }
 .fotocv{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 50vh;
     border-radius: 2.963vh;
 }
 
@@ -177,4 +178,10 @@ ul {
 .indexUl{
     padding:0;
     margin:0;
+}
+
+.footerStyle {
+    background-color: #F3EAEA;
+    text-align: right;
+    min-height: 18.2vh;
 }

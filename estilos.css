@@ -36,10 +36,12 @@
 
     .listaBotones li{
         display:inline-block;
+        place-content: center;
+        margin: auto;
         padding-left:3px;
         padding-right:3px;
         white-space: nowrap;
-        margin-bottom: 30px;
+        margin-bottom: 4%;
     }
 }
 
@@ -98,10 +100,19 @@ body{
     color:#8E726E;
     font-family: 'Montserrat';
     font-weight: bolder;
-    font-size: 4.4444vh;
+    font-size: 4vh;
     justify-content: center;
     align-items: center;
 }
+.opcionesLetraboton2{
+    color:#8E726E;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 3.17182vh;
+    justify-content: center;
+    align-items: center;
+}
+
 .tituloNombre{
     font-family: 'Bebas Neue';
     font-size: 6vh; 
@@ -113,7 +124,7 @@ body{
 .opcionesLetra{
     color:#946761;
     font-family: 'Montserrat';
-    font-size: 3.3333vh;
+    font-size: 3.33vh;
     justify-content: center;
     align-items: center;
 }
@@ -137,6 +148,26 @@ body{
     border-radius: 1.8519vh;
     padding: 3.2407vh;
     margin: 0.4630vh;
+}
+
+
+
+.rectanguloboton1{
+    text-align: center;
+    list-style-type: none;
+    background-color: #D1C9C2;
+    border-radius: 1.8519vh;
+    padding: 1.2963vh;
+    margin: 1vh;
+}
+
+.rectanguloboton2{
+    text-align: center;
+    list-style-type: none;
+    background-color: #EEE8E5;
+    border-radius: 1.8519vh;
+    padding: 1.1111vh;
+    margin: 1.1111vh;
 }
 
 .contenedor-centrado{

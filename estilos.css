@@ -76,6 +76,7 @@ body{
     border-radius: 1.8519vh;
     padding: 1.8519vh;
     margin: 1.8519vh;
+   
 }
 
 .rectanguloboton1{
@@ -85,6 +86,7 @@ body{
     border-radius: 1.8519vh;
     padding: 1.2963vh;
     margin: 1.2963vh;
+    
 }
 
 .rectanguloboton2{
@@ -94,6 +96,7 @@ body{
     border-radius: 1.8519vh;
     padding: 1.1111vh;
     margin: 1.1111vh;
+    
 }
 
 .opcionesLetraboton{
@@ -103,6 +106,7 @@ body{
     font-size: 4vh;
     justify-content: center;
     align-items: center;
+    
 }
 .opcionesLetraboton2{
     color:#8E726E;
@@ -127,6 +131,7 @@ body{
     font-size: 3.33vh;
     justify-content: center;
     align-items: center;
+
 }
 
 .opcionesLetra2{
@@ -136,6 +141,7 @@ body{
     font-size: 3.1481vh;
     justify-content: center;
     align-items: center;
+   
 }
 .rectangulo-datosPersonales{
     width: 20%;

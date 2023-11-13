@@ -70,6 +70,7 @@ body{
 
 .rectangulo{
     font-family: 'Montserrat';
+    text-decoration: none;
     text-align: center;
     list-style-type: none;
     background-color: #F3EAEA;
@@ -82,6 +83,7 @@ body{
 .rectanguloboton1{
     text-align: center;
     list-style-type: none;
+    text-decoration: none;
     background-color: #D1C9C2;
     border-radius: 1.8519vh;
     padding: 1.2963vh;
@@ -92,11 +94,25 @@ body{
 .rectanguloboton2{
     text-align: center;
     list-style-type: none;
+    text-decoration: none;
     background-color: #EEE8E5;
     border-radius: 1.8519vh;
     padding: 1.1111vh;
     margin: 1.1111vh;
     
+}
+
+:root{
+    --rectanguloboton2: #D5B9B5;
+ }
+
+.rectanguloboton2 a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+.rectanguloboton2 :hover{
+    background: var(--rectanguloboton2);
 }
 
 .opcionesLetraboton{
@@ -106,6 +122,7 @@ body{
     font-size: 4vh;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     
 }
 .opcionesLetraboton2{
@@ -115,6 +132,7 @@ body{
     font-size: 3.17182vh;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .tituloNombre{
@@ -123,6 +141,7 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    text-decoration: none;
 }
 
 .opcionesLetra{
@@ -131,7 +150,7 @@ body{
     font-size: 3.33vh;
     justify-content: center;
     align-items: center;
-
+    text-decoration: none;
 }
 
 .opcionesLetra2{
@@ -141,8 +160,9 @@ body{
     font-size: 3.1481vh;
     justify-content: center;
     align-items: center;
-   
+    text-decoration: none;   
 }
+
 .rectangulo-datosPersonales{
     width: 20%;
 }
@@ -151,16 +171,14 @@ body{
     background-color:#F8F5F2; 
     align-items: flex-end;
     justify-content: flex-end;
+    text-align: center;
     border-radius: 1.8519vh;
     padding: 3.2407vh;
     margin: 0.4630vh;
 }
 
-
-
 .rectanguloboton1{
     text-align: center;
-    list-style-type: none;
     background-color: #D1C9C2;
     border-radius: 1.8519vh;
     padding: 1.2963vh;
@@ -169,7 +187,6 @@ body{
 
 .rectanguloboton2{
     text-align: center;
-    list-style-type: none;
     background-color: #EEE8E5;
     border-radius: 1.8519vh;
     padding: 1.1111vh;
@@ -187,26 +204,26 @@ body{
     color:#946761;
     font-family: 'Montserrat';
     font-size: 1.8519vh;
-    list-style-type: none;
+    text-decoration: none;
 }
 .letrastitulotext{
     color:#946761;
     font-family: 'Montserrat';
     font-size: 3.3333vh;
-    list-style-type: none;
+    text-decoration: none;
 }
 .letrastitulo{
     color:#946761;
     font-family: 'Montserrat';
     font-size: 3.7037vh;
     font-weight: bold;
-    list-style-type: none;
+    text-decoration: none;
 }
 .parrafo{
     bottom: 10%;
     text-align:justify;
-
 }
+
 ul {
     list-style: none;
 }

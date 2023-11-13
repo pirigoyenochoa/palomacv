@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="iconos.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="tituloNombre">
+        <h1>PALOMA IRIGOYEN OCHOA</h1>
+    </div>
+    <div>
+        <ul class="listaBotones">
+            <li>
+                <a class="rectanguloboton2 opcionesLetra rectangulo-datosPersonales" href="index.html">PÁGINA PRINCIPAL</a>
+            </li>
+        </ul>
+    </div>
+
+    <audio id="audioPlayer" src="./imagenes/music.mp3" loop></audio>
+
+    <div class="game">
+        <div class="grid" id="grid">
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <button class="button" onclick="resetGame()">Reset</button>
+    </div>
+
+    <script type="text/javascript">
+        let currentPlayer = 'X';
+        let grid = ['', '', '', '', '', '', '', '', ''];
+
+        function makeMove(index) {
+            if (grid[index] === '') {
+                grid[index] = currentPlayer;
+                document.getElementById('grid').children[index].innerHTML = currentPlayer;
+                checkWin();
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+            }
+        }
+
+        function checkWin() {
+            const winConditions = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                [0, 4, 8], [2, 4, 6] // Diagonals
+            ];
+
+            for (let condition of winConditions) {
+                const [a, b, c] = condition;
+                if (grid[a] !== '' && grid[a] === grid[b] && grid[a] === grid[c]) {
+                    alert(`Ganó ${grid[a]}!`);
+                    return resetGame();
+                }
+            }
+
+            if (!grid.includes('')) {
+                alert('Es un empate :(');
+                resetGame();
+            }
+        }
+
+        function resetGame() {
+            grid = ['', '', '', '', '', '', '', '', ''];
+            for (let cell of document.getElementById('grid').children) {
+                cell.innerHTML = '';
+            }
+        }
+        
+
+        function reproducirMusica() {
+            const audio = document.getElementById('audioPlayer');
+            audio.play();
+        }
+        reproducirMusica()
+
+    </script>
+</body>
+</html>
